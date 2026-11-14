@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: zerog-vitals
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/zerogvitals}
+    username: ${POSTGRES_USER:zerog}
+    password: ${POSTGRES_PASSWORD:change-me}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    locations: classpath:db/migration
+  jackson:
+    time-zone: UTC
+    serialization:
+      write-dates-as-timestamps: false
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+server:
+  error:
+    include-stacktrace: never
+
+zerogvitals:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:3000}
+  mission:
+    default-profile: ${DEFAULT_MISSION_PROFILE:MARS_TRANSIT}
+  simulation:
+    speed: ${SIMULATION_SPEED:30}
+
+logging:
+  level:
+    root: INFO

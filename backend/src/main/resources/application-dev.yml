@@ -1,0 +1,8 @@
+# Perfil dev: carga además la tripulación de demo (db/seed-dev).
+spring:
+  flyway:
+    locations: classpath:db/migration,classpath:db/seed-dev
+
+logging:
+  level:
+    com.zerogvitals: DEBUG
