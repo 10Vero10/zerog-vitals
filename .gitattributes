@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+mvnw text eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
+*.jar binary
+# Los SVG se tratan como texto (BodyFigure se edita a mano)
+*.svg text eol=lf
