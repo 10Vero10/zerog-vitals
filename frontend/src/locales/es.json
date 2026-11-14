@@ -1,0 +1,16 @@
+{
+  "app": {
+    "name": "ZeroG Vitals",
+    "tagline": "Autoevaluación de salud para astronautas"
+  },
+  "disclaimer": "Prototipo. No es un dispositivo médico.",
+  "emergency": {
+    "button": "EMERGENCIA",
+    "comingSoon": "La guía de emergencia P1 está en construcción."
+  },
+  "common": {
+    "loading": "Cargando…",
+    "offline": "Sin conexión con el computador del hábitat",
+    "back": "Volver"
+  }
+}

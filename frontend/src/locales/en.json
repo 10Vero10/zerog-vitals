@@ -1,0 +1,16 @@
+{
+  "app": {
+    "name": "ZeroG Vitals",
+    "tagline": "Health self-assessment for astronauts"
+  },
+  "disclaimer": "Prototype. Not a medical device.",
+  "emergency": {
+    "button": "EMERGENCY",
+    "comingSoon": "The P1 emergency guide is under construction."
+  },
+  "common": {
+    "loading": "Loading…",
+    "offline": "No connection to the habitat computer",
+    "back": "Back"
+  }
+}
